@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafamovies</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <h1 id="logo">Rafamovies</h1>
+      <form id="form">
+        <input id="search" placeholder="Pesquisar filme..."/>
+      </form>
+    </header>
+    <!--List of movies-->
+    <main id="content"></main>
+    <div id="modal" class="none">
+      <div id="modal_content">
+        <div id="header_modal">
+          <h3 id="watch">Assista ao Trailer</h3>
+          <img src="images/close.png" alt="imagem" onclick="modalOpenClose(false)"/>
+        </div>
+        <div id="trailer_movie">
+          <!-- <iframe
+            id="iframe" 
+            src="" 
+            frameborder="0" 
+            allow="accelerometer; 
+            autoplay; clipboard-write; 
+            encrypted-media; 
+            gyroscope; 
+            picture-in-picture" 
+            allowfullscreen>
+          </iframe> -->
+        </div>
+        <div id="modal_info">
+          <img id="poster_modal" src="" alt="" />
+          <div id="info_movie">
+            <div>
+              <p>Nome</p>
+              <span id="name_movie_modal"></span>
+            </div>
+            <div>
+              <p>Data de Lançamento</p>
+              <span id="release_date_modal"></span>
+            </div>
+            <div>
+              <p>Média de Notas</p>
+              <span id="vote_average_modal"></span>
+            </div>
+          </div>
+        </div>
+        <div id="overview">
+          <p>Resumo</p>
+          <textarea id="textarea" readonly></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
